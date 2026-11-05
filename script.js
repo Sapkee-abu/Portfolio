@@ -72,11 +72,11 @@ function startTypewriter(fromIntro = false) {
   clearTimeout(typewriterTimer);
   if (!typewriter) return;
   if (reducedMotion.matches) {
-    typewriter.textContent = 'LLM Applications / AI Agents | RAG';
+    typewriter.textContent = 'LLM Applications / Multi-Agent | RAG';
     typewriter.classList.remove('is-animated');
     return;
   }
-  const words = ['LLM Applications', 'AI Agents | RAG'];
+  const words = ['LLM Applications', 'Multi-Agent | RAG'];
   let wordIndex = 0;
   let character = fromIntro ? words[0].length : 0;
   let deleting = fromIntro;
@@ -119,7 +119,7 @@ function runIntro() {
   }
   async function play() {
     text.classList.add('intro-text-multiline');
-    await type('LLM Applications\nAI Agents | RAG', 45);
+    await type('LLM Applications\nMulti-Agent | RAG', 45);
     if (!overlay.isConnected) return;
     await wait(700);
     while (text.textContent.length) {
