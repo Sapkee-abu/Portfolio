@@ -19,13 +19,19 @@
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Sapkee Abu, home">
         <span class="brand-mark">SA</span>
-        <span class="brand-name">Sapkee Abu</span>
+        <span class="brand-name">Mr. Sapkee Abu</span>
       </a>
       <nav aria-label="Main navigation">
+        <div class="language-toggle">
+          <input type="checkbox" id="language-switch" aria-label="เลือกภาษาไทย" />
+          <label for="language-switch"><span>ไทย</span><span>English</span></label>
+        </div>
+        <div class="nav-links">
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#skills">Skills</a>
         <a class="nav-contact" href="#contact">Contact</a>
+        </div>
       </nav>
     </header>
 
@@ -33,20 +39,14 @@
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy reveal">
           <p class="eyebrow"><span></span> AI Engineer Intern</p>
-          <h1 id="hero-title">I build AI systems that turn information into <em>useful outcomes.</em></h1>
+          <h1 id="hero-title" aria-label="LLM Applications; AI Agents and RAG"><span class="typewriter" aria-hidden="true">LLM Applications / AI Agents | RAG</span></h1>
           <p class="hero-intro">
-            Third-year Intelligent Information Technology student focused on LLM applications,
-            multi-agent workflows, RAG, and MCP-based retrieval.
+            Third-year Intelligent Information Technology student at Walailak University interested in AI development and LLM-powered applications.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
             <a class="button button-secondary" href="Sapkee-Abu-Resume.pdf" download>Download résumé</a>
           </div>
-          <dl class="hero-facts" aria-label="Quick facts">
-            <div><dt>Based in</dt><dd>Yala, Thailand</dd></div>
-            <div><dt>Studying at</dt><dd>Walailak University</dd></div>
-            <div><dt>Focus</dt><dd>LLMs · Agents · RAG</dd></div>
-          </dl>
         </div>
 
         <div class="portrait-wrap reveal" data-delay="1">
@@ -62,19 +62,14 @@
       <section class="about section-grid" id="about" aria-labelledby="about-title">
         <div class="section-label reveal"><span>01</span><p>About</p></div>
         <div class="section-content about-copy reveal">
-          <p class="kicker">A curious builder with a systems mindset.</p>
-          <h2 id="about-title">
-            Interested in the logic behind intelligent applications — and in making that logic work reliably.
-          </h2>
+          <p class="kicker">Profile</p>
+          <h2 id="about-title">Profile</h2>
           <div class="about-detail">
             <p>
-              I am a third-year Intelligent Information Technology student at Walailak University,
-              interested in AI development and LLM-powered applications.
+              Third-year Intelligent Information Technology student at Walailak University interested in AI development and LLM-powered applications.
             </p>
             <p>
-              My experience includes designing AI system logic, developing multi-agent workflows,
-              and integrating RAG and MCP for information retrieval. I enjoy building intelligent
-              applications and automation systems that solve real-world problems.
+              Experienced in designing AI system logic, developing Multi-Agent workflows, and integrating RAG and MCP for information retrieval. Interested in building intelligent applications and automation systems that solve real-world problems.
             </p>
           </div>
         </div>
@@ -85,7 +80,7 @@
         <div class="section-content">
           <div class="work-heading reveal">
             <div>
-              <p class="kicker">Project experience</p>
+              <p class="kicker">Project</p>
               <h2 id="work-title">Generator</h2>
             </div>
             <span class="project-index">01 / 01</span>
@@ -94,11 +89,9 @@
           <article class="project-card reveal">
             <div class="project-summary">
               <p class="project-type">AI-powered document system</p>
-              <h3>AUN-QA Document Generation System</h3>
+              <h3>Generator AI-Powered AUN-QA Document Generation System</h3>
               <p>
-                An automated document generation system for AUN-QA quality assessment, using a
-                multi-agent architecture and LLMs with RAG to retrieve relevant information and
-                supporting evidence for structured DOCX documents.
+                Developed an automated document generation system for AUN-QA quality assessment using Multi-Agent Architecture and LLMs with RAG to retrieve relevant information and supporting evidence for generating structured DOCX documents.
               </p>
               <div class="tag-list" aria-label="Technologies">
                 <span>Multi-Agent</span><span>LLM</span><span>RAG</span><span>MCP</span><span>DOCX</span>
@@ -106,7 +99,7 @@
             </div>
 
             <div class="system-map" aria-label="Simplified project workflow">
-              <div class="map-node map-source"><small>Knowledge</small><strong>ChromaDB<br />MongoDB<br />OCR</strong></div>
+              <div class="map-node map-source"><small>Knowledge</small><strong>ChromaDB<br />MongoDB</strong></div>
               <span class="map-arrow" aria-hidden="true">→</span>
               <div class="map-node map-core"><small>Retrieval</small><strong>MCP + RAG</strong></div>
               <span class="map-arrow" aria-hidden="true">→</span>
@@ -118,11 +111,11 @@
             <div class="contributions">
               <p class="contributions-title">My contribution</p>
               <ol>
-                <li><span>01</span><p>Designed the system logic, developed the PS Criterion Agent, and implemented the Master Agent workflow.</p></li>
-                <li><span>02</span><p>Built DOCX template parsing for sections, headings, tables, content slots, and structured JSON.</p></li>
-                <li><span>03</span><p>Integrated MCP-based retrieval across ChromaDB, MongoDB, and document/OCR sources.</p></li>
-                <li><span>04</span><p>Implemented verification, retry, and reference mapping for traceable agent-generated results.</p></li>
-                <li><span>05</span><p>Developed template injection while preserving the original DOCX structure and supporting HTML preview.</p></li>
+                <li><span>01</span><p>Designed the system logic and developed the PS Criterion Agent, while implementing the Master Agent Workflow to coordinate AI Agents and retrieval processes.</p></li>
+                <li><span>02</span><p>Developed DOCX Template Parsing to analyze document structures, including sections, headings, tables, and content slots, and convert them into structured JSON.</p></li>
+                <li><span>03</span><p>Integrated MCP-based Retrieval to retrieve relevant information and evidence from ChromaDB, MongoDB, and Document/OCR sources through the Retrieval Manager.</p></li>
+                <li><span>04</span><p>Implemented Verification, Retry, and Reference Mapping to validate Agent-generated results and maintain traceability to original data sources.</p></li>
+                <li><span>05</span><p>Developed Template Injection to populate DOCX templates with verified content while preserving the original structure, supporting both DOCX generation and HTML Preview.</p></li>
               </ol>
             </div>
           </article>
@@ -173,23 +166,22 @@
         </div>
       </section>
 
-      <section class="contact" id="contact" aria-labelledby="contact-title">
-        <div class="contact-inner reveal">
-          <p class="eyebrow"><span></span> Let’s connect</p>
-          <h2 id="contact-title">Have an AI idea or internship opportunity?</h2>
-          <a class="contact-email" href="mailto:zhia0021615@gmail.com">zhia0021615@gmail.com <span aria-hidden="true">↗</span></a>
-          <div class="contact-links">
-            <a href="https://github.com/Sapkee-Abu" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-            <span>Yala, Thailand</span>
-            <span>+66 0000000</span>
-          </div>
-        </div>
-      </section>
     </main>
 
-    <footer>
-      <p>© <span data-year></span> Sapkee Abu</p>
-      <a href="#top">Back to top ↑</a>
+    <footer id="contact">
+      <section class="contact section-grid" aria-labelledby="contact-title">
+        <div class="section-label"><span>05</span><p class="hero-contact-title" id="contact-title">Contact</p></div>
+        <dl class="hero-facts">
+          <div><dt>Email</dt><dd><a href="mailto:zhia0021615@gmail.com">zhia0021615@gmail.com</a></dd></div>
+          <div><dt>GitHub</dt><dd><a href="https://github.com/Sapkee-Abu" target="_blank" rel="noreferrer">Sapkee-Abu ↗</a></dd></div>
+          <div><dt>Location</dt><dd>Yala, Thailand</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+660947248698">+66 0947248698</a></dd></div>
+        </dl>
+      </section>
+      <div class="footer-bottom">
+        <p>© <span data-year></span> Sapkee Abu</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
     </footer>
   </body>
 </html>
