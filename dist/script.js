@@ -115,13 +115,15 @@ function runIntro() {
     }
   }
   async function play() {
-    await type('LLM Applications | AI Agents | RAG', 45);
+    text.classList.add('intro-text-multiline');
+    await type('LLM Applications\nAI Agents | RAG', 45);
     if (!overlay.isConnected) return;
     await wait(700);
     while (text.textContent.length) {
       text.textContent = text.textContent.slice(0, -1);
       await wait(18);
     }
+    text.classList.remove('intro-text-multiline');
     await wait(200);
     await type('LLM Applications', 65);
     if (!overlay.isConnected) return;
