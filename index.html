@@ -61,7 +61,6 @@
       <section class="about section-grid" id="about" aria-labelledby="about-title">
         <div class="section-label reveal"><span>01</span><p>About</p></div>
         <div class="section-content about-copy reveal">
-          <p class="kicker">Profile</p>
           <h2 id="about-title">Profile</h2>
           <div class="about-detail">
             <p>
@@ -82,7 +81,7 @@
               <p class="kicker">Project</p>
               <h2 id="work-title">Generator</h2>
             </div>
-            <span class="project-index">01 / 01</span>
+            <span class="project-index">01 / 02</span>
           </div>
 
           <article class="project-card reveal">
@@ -117,6 +116,68 @@
                 <li><span>05</span><p>Developed Template Injection to populate DOCX templates with verified content while preserving the original structure, supporting both DOCX generation and HTML Preview.</p></li>
               </ol>
             </div>
+            <div class="project-links generator-links">
+              <a class="dee-link generator-github" href="https://github.com/Sapkee-abu/genaratorService" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <div class="work-heading dee-heading reveal">
+            <div>
+              <p class="kicker dee-kicker">Project</p>
+              <h2>Dee</h2>
+            </div>
+            <span class="project-index">02 / 02</span>
+          </div>
+
+          <article class="project-card dee-project reveal" aria-labelledby="dee-title">
+            <div class="project-summary">
+              <p class="project-type dee-type">Android weather &amp; AI assistant</p>
+              <h3 id="dee-title">Dee — AI Weather Assistant</h3>
+              <p class="dee-summary">A personal Android application that combines weather forecasts with an AI assistant, Dee. Users can check weather by location, explore hourly forecasts, and chat with Dee in easy-to-understand Thai about the weather, daily planning, or general topics.</p>
+              <div class="tag-list" aria-label="Technologies">
+                <span>React Native</span><span>Expo</span><span>TypeScript</span><span>Python</span><span>FastAPI</span><span>Gemini API</span><span>Open-Meteo API</span><span>Supabase</span><span>Ollama</span>
+              </div>
+            </div>
+
+            <div class="system-map dee-map" aria-label="Dee project workflow">
+              <div class="map-node"><small class="dee-map-app">Android app</small><strong class="dee-map-app-value">Weather<br />Chat</strong></div>
+              <span class="map-arrow" aria-hidden="true">→</span>
+              <div class="map-node map-core"><small class="dee-map-backend">Backend</small><strong>FastAPI<br />Open-Meteo</strong></div>
+              <span class="map-arrow" aria-hidden="true">→</span>
+              <div class="map-node"><small class="dee-map-context">Context</small><strong class="dee-map-context-value">Forecast<br />Chat history</strong></div>
+              <span class="map-arrow" aria-hidden="true">→</span>
+              <div class="map-node map-output"><small class="dee-map-output">AI response</small><strong>Gemini API<br />Ollama</strong></div>
+            </div>
+
+            <div class="contributions dee-concept">
+              <p class="contributions-title dee-concept-title">Project concept</p>
+              <div class="dee-prose">
+                <p class="dee-concept-copy">Weather data is often presented as numbers and charts that users need to interpret. Dee uses Open-Meteo forecast data as context to explain the weather and offer guidance, such as how to prepare before leaving home or when to plan an activity.</p>
+                <p class="dee-flow-copy">The app sends the user's question and selected coordinates to the backend, which prepares Open-Meteo weather data and relevant chat history for the LLM. The response appears in chat, while the weather screen and charts display API data directly.</p>
+              </div>
+            </div>
+
+            <div class="contributions dee-contributions">
+              <p class="contributions-title dee-contributions-title">My contribution</p>
+              <ol>
+                <li><span>01</span><p>Developed the Android app with React Native, Expo, and TypeScript, including weather, chat, locations, and settings screens.</p></li>
+                <li><span>02</span><p>Built a Python and FastAPI backend to retrieve and prepare current, hourly, and daily weather data for the user's coordinates.</p></li>
+                <li><span>03</span><p>Integrated the Gemini API using weather data, conversation history, and the user's selected reply as context.</p></li>
+                <li><span>04</span><p>Designed prompts for a friendly assistant that distinguishes current conditions from forecasts and answers using the supplied information.</p></li>
+                <li><span>05</span><p>Designed primary and fallback model ordering and supported local AI through Ollama.</p></li>
+                <li><span>06</span><p>Built charts for temperature, humidity, rain, wind, and UV, with a theme that changes according to the current hour's weather.</p></li>
+              </ol>
+            </div>
+            <div class="dee-result">
+              <p class="contributions-title dee-result-title">Result</p>
+              <div>
+                <p class="dee-result-copy">An Android app that brings weather forecasts and AI chat together, with an APK available to download and install.</p>
+                <div class="project-links">
+                  <a class="dee-link dee-download" href="https://dee-weather-downloads.vercel.app/" target="_blank" rel="noopener noreferrer">Download Dee <span aria-hidden="true">↗</span></a>
+                  <a class="dee-link dee-github" href="https://github.com/Sapkee-abu/AI_Weather_Assistant" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
       </section>
@@ -124,28 +185,27 @@
       <section class="skills section-grid" id="skills" aria-labelledby="skills-title">
         <div class="section-label reveal"><span>03</span><p>Capabilities</p></div>
         <div class="section-content reveal">
-          <p class="kicker">Tools I work with</p>
-          <h2 id="skills-title">A practical toolkit for building AI-powered products.</h2>
+          <h2 id="skills-title">Tools I work with</h2>
           <div class="skill-groups">
             <article>
               <span class="skill-number">01</span>
-              <h3>AI Technologies</h3>
+              <h3>AI &amp; LLM</h3>
               <p>LLM & AI Agents</p><p>RAG & MCP</p>
             </article>
             <article>
               <span class="skill-number">02</span>
-              <h3>Programming & Backend</h3>
-              <p>Python · JavaScript</p><p>HTML / CSS · FastAPI</p>
+              <h3>Programming</h3>
+              <p>Python</p><p>JavaScript</p><p>HTML / CSS</p>
             </article>
             <article>
               <span class="skill-number">03</span>
-              <h3>AI Development Tools</h3>
-              <p>Claude · ChatGPT</p><p>Gemini</p>
+              <h3>Frameworks &amp; Development</h3>
+              <p>FastAPI</p><p>Node.js (Express)</p><p>React</p><p>React Native</p>
             </article>
             <article>
               <span class="skill-number">04</span>
-              <h3>Development Tools</h3>
-              <p>Git · Docker</p>
+              <h3>AI &amp; Development Tools</h3>
+              <p>Claude</p><p>ChatGPT</p><p>Git</p><p>GitHub</p><p>Docker</p>
             </article>
           </div>
         </div>
