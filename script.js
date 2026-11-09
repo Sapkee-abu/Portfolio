@@ -23,7 +23,7 @@ const translations = [
   ['.contributions li:nth-child(3) p', 'เชื่อมต่อระบบ MCP-based Retrieval เพื่อค้นคืนข้อมูลและ Evidence จาก ChromaDB, MongoDB และแหล่งข้อมูล Document/OCR ผ่าน Retrieval Manager'],
   ['.contributions li:nth-child(4) p', 'พัฒนากระบวนการ Verification, Retry และ Reference Mapping เพื่อตรวจสอบผลลัพธ์จาก AI Agent และเชื่อมโยงเนื้อหากับแหล่งข้อมูลต้นฉบับเพื่อให้ตรวจสอบย้อนกลับได้'],
   ['.contributions li:nth-child(5) p', 'พัฒนา Template Injection เพื่อนำเนื้อหาที่ผ่านการตรวจสอบแล้วใส่ลงใน DOCX Template โดยรักษาโครงสร้างเอกสารเดิม รองรับการสร้างไฟล์ DOCX และ HTML Preview'],
-  ['.dee-kicker', 'โปรเจกต์'], ['.dee-type', 'แอปสภาพอากาศและผู้ช่วย AI สำหรับ Android'],
+  ['.dee-kicker', 'โปรเจกต์'], ['.dee-type', 'โปรเจกต์ส่วนบุคคล · แอปสภาพอากาศและผู้ช่วย AI สำหรับ Android'],
   ['.dee-summary', 'โปรเจกต์ส่วนบุคคลที่รวมการพยากรณ์อากาศและผู้ช่วย AI “ดี้” ไว้ในแอป Android ผู้ใช้สามารถดูอากาศตามตำแหน่ง เช็กพยากรณ์รายชั่วโมง และคุยกับดี้เพื่อสอบถามข้อมูล ขอคำแนะนำในการวางแผนชีวิตประจำวัน หรือสนทนาเรื่องทั่วไปด้วยภาษาไทยที่เข้าใจง่าย'],
   ['.dee-map-app', 'แอป Android'], ['.dee-map-app-value', 'อากาศ<br />แชต'], ['.dee-map-backend', 'ระบบหลังบ้าน'], ['.dee-map-context', 'ข้อมูลประกอบ'], ['.dee-map-context-value', 'พยากรณ์<br />ประวัติสนทนา'], ['.dee-map-output', 'คำตอบจาก AI'],
   ['.dee-concept-title', 'แนวคิดของโปรเจกต์'],
